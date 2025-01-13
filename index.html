@@ -228,7 +228,171 @@
 				</div>
 			</div>
 			<div class="row justify-content-around text-center"></div>
+			<!-- Start Countdown -->
+			<div class="col-md-6 mt-3" id="countdown">
+				<ul id="hitungmundur">
+					<li>
+						<span class="days">00</span>
+						<p class="days_text">Hari</p>
+					</li>
+					<li class="separator">:</li>
+					<li>
+						<span class="hours">00</span>
+						<p class="hours_text">Jam</p>
+					</li>
+					<li class="separator">:</li>
+					<li>
+						<span class="minutes">00</span>
+						<p class="minutes_text">Menit</p>
+					</li>
+					<li class="separator">:</li>
+					<li>
+						<span class="seconds">00</span>
+						<p class="seconds_text">Detik</p>
+					</li>
+				</ul>
+			</div>
+			<div class="spasi"></div>
+			<script class="source" type="text/javascript">
+				var now = new Date();
+				var day = now.getDate();
+				var month = now.getMonth() + 1;
+				var year = now.getFullYear() + 1;
+				var nextyear = month + "/" + day + "/" + year + " 07:07:07";
+				var h = "10/20/2025 08:00:00";
+				$("#hitungmundur").countdown(
+					{
+						date: h, // TODO Date format: 07/27/2017 17:00:00
+						offset: +8, // TODO Timezone Offset
+						day: "Day",
+						days: "Days",
+						// hideOnComplete: true
+					},
+					function (container) {
+						alert("Our wedding ceremony is over. Thank you very much for attending! :)");
+					}
+				);
+			</script>
+			<!-- End Countdown -->
 		</section>
 		<!-- Jumbotron end -->
+
+		<!-- Sloka -->
+		<section class="card-1">
+			<div class="container col-md-6">
+				<div class="row justify-content-center fs-5 text-center">
+					<figure class="text-center">
+						<blockquote class="blockquote">
+							<p class="fst-italic p">Wa min āyātihi an khalaqa lakum min anfusikum azwājًا litaskunū ilayhā waja‘ala baynakum mawaddatan wa raḥmah. Inna fī dhālika laāyātil liqawmin yatafakkarūn.</p>
+						</blockquote>
+						<figcaption class="blockquote-footer">
+							<cite title="Source Title">Ar-Rum (30:21)</cite>
+							<blockquote class="blockquote">
+								<p class="fst-italic p">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
+							</blockquote>
+						</figcaption>
+					</figure>
+					<div class="col-md">
+						<p class="p">For the presence and prayer of blessings, we as a family would like to thank you.</p>
+					</div>
+				</div>
+				<div class="row text-center mb-3">
+					<div class="col mt-3">
+						<h2 class="p">Allahumma Anta As-Salam, Wa Minka As-Salam, Tabarakta Ya Dzal Jalali Wal Ikram.</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Sloka end-->
+
+		<!-- Full screen modal -->
+		<!-- Galeri -->
+		<section class="card" id="galeri">
+			<div class="container col-md-6">
+				<div class="row text-center mb-3">
+					<div class="col">
+						<h2>Our Stories</h2>
+					</div>
+				</div>
+				<div class="row" style="display: block">
+					<div class="col-md mb-3">
+						<div class="card-">
+							<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner rounded-4">
+									<div class="carousel-item active">
+										<a target="_blank" href="assets/images/person/naruhi1.jpg"><img src="assets/images/person/naruhi1.jpg" width="200" class="d-block w-100" alt="wedding6.jpg" /></a>
+									</div>
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi4.jpg"><img src="assets/images/person/naruhi4.jpg" width="200" class="d-block w-100" alt="wedding8.jpg" /></a>
+									</div>
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi10.jpg"><img src="assets/images/person/naruhi10.jpg" width="200" class="d-block w-100" alt="wedding7.jpg" /></a>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md mb-3">
+						<div class="card-">
+							<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner rounded-4">
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi5.jpg"><img src="assets/images/person/naruhi5.jpg" class="d-block w-100" alt="wedding10" /></a>
+									</div>
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi6.jpg"><img src="assets/images/person/naruhi6.jpg" class="d-block w-100" alt="wedding14" /></a>
+									</div>
+									<div class="carousel-item active">
+										<a target="_blank" href="assets/images/person/naruhi8.jpg"><img src="assets/images/person/naruhi8.jpg" class="d-block w-100" alt="wedding12" /></a>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md mb-3">
+						<div class="card-">
+							<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner rounded-4">
+									<div class="carousel-item active">
+										<a target="_blank" href="assets/images/person/naruhi3.jpg"><img src="assets/images/person/naruhi3.jpg" class="d-block w-100" alt="wedding11" /></a>
+									</div>
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi7.jpg"><img src="assets/images/person/naruhi7.jpg" class="d-block w-100" alt="wedding9" /></a>
+									</div>
+									<div class="carousel-item">
+										<a target="_blank" href="assets/images/person/naruhi12.jpg"><img src="assets/images/person/naruhi12.jpg" class="d-block w-100" alt="wedding15" /></a>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Galeri end-->
 	</body>
 </html>
