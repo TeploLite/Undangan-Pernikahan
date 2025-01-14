@@ -34,11 +34,11 @@ img.rounded {
 	background-color: rgb(215, 127, 161);
 }
 nav.footer {
-	background-color: #343a40;
+	background-color: none;
 	text-align: center;
-	color: goldenrod;
+	color: rgb(0, 0, 0);
 	padding: 20px;
-	font-size: x-small;
+	font-size: small;
 }
 img.card-img-top {
 	width: 100%;
@@ -352,4 +352,11 @@ figcaption {
 	outline: none;
 	cursor: pointer;
 	user-select: none;
+}
+.font-esthetic {
+	font-family: "Sacramento", cursive !important;
+}
+
+.font-arabic {
+	font-family: "Noto Naskh Arabic", serif !important;
 }
