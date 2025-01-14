@@ -31,7 +31,7 @@ img.rounded {
 	width: 100%;
 }
 .navbar {
-	background-color: rgb(215, 127, 161);
+	background-color: rgb(52, 2, 113);
 }
 nav.footer {
 	background-color: none;
@@ -47,7 +47,7 @@ img.card-img-top {
 	box-shadow: 13px 13px 20px #caced1, -13px -13px 20px white;
 	border-radius: 20px;
 	margin-top: 10px;
-	color: black;
+	color: rgb(0, 0, 0);
 	background-color: #e8ebee;
 }
 .col {
@@ -167,7 +167,7 @@ audio {
 }
 .float-container {
 	background-color: #343a40;
-	position: fixed;
+	position: top;
 	width: 35px;
 	height: 35px;
 	bottom: 20px;
@@ -229,6 +229,7 @@ audio {
 	flex-flow: column;
 	align-items: center;
 }
+
 ul#hitungmundur {
 	list-style: none;
 	margin: 25px 0px 0px 0px;
@@ -359,4 +360,34 @@ figcaption {
 
 .font-arabic {
 	font-family: "Noto Naskh Arabic", serif !important;
+}
+/* Warna default saat tidak aktif */
+#navbar-menu .nav-link {
+	color: rgb(174, 174, 174);
+	transition: color 0.3s ease-in-out; /* Efek transisi */
+}
+
+/* Warna saat hover atau fokus */
+#navbar-menu .nav-link:hover,
+#navbar-menu .nav-link:focus {
+	color: #ffffff; /* Warna merah muda terang */
+}
+
+/* Warna saat aktif */
+#navbar-menu .nav-link.active {
+	color: #ffffff !important; /* Warna kuning keemasan */
+}
+
+/* Span untuk teks bawah dengan efek yang sama */
+#navbar-menu .nav-link span {
+	transition: color 0.3s ease-in-out; /* Efek transisi */
+}
+
+#navbar-menu .nav-link:hover span,
+#navbar-menu .nav-link:focus span {
+	color: #f8d7da; /* Warna merah muda terang */
+}
+
+#navbar-menu .nav-link.active span {
+	color: #ffc107; /* Warna kuning keemasan */
 }
