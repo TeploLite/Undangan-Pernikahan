@@ -216,12 +216,13 @@ audio {
 	padding-top: 3px;
 }
 #countdown {
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 5px 5px 10px #caced1, -5px -5px 10px white;
 	margin-bottom: -10px;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	background-size: cover;
 }
 
 ul#hitungmundur {
@@ -383,5 +384,5 @@ figcaption {
 }
 
 #navbar-menu .nav-link.active span {
-	color: #ffc107; /* Warna kuning keemasan */
+	color: #ffffff; /* Warna kuning keemasan */
 }
