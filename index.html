@@ -82,7 +82,7 @@
 		<header id="home">
 			<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
 				<div class="container">
-					<a class="navbar-brand" href="#home">Undangan Pernikahan Online</a>
+					<a class="navbar-brand" href="#home">Undangan Pernikahan</a>
 					<!-- Back to top button -->
 					<div id="button"></div>
 					<!-- audio start -->
@@ -111,7 +111,7 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#about">
+					<a class="nav-link" href="#mpl">
 						<i class="fa-solid fa-user-group"></i>
 						<span class="d-block" style="font-size: 0.7rem">Mempelai</span>
 					</a>
@@ -235,7 +235,7 @@
 						<div class="col-md-4">
 							<a target="_blank" href="assets/images/person/hinata.jpg"><img src="assets/images/person/hinata.jpg" width="200" alt="pernikahan naruto dan hinata" class="rounded-circle img-thumbnail" /></a>
 							<h1 class="display-12 text-center">Nelis Mutiara Rizky Sani</h1>
-							<h2 class="fs-5">Putri ke-2</h2>
+							<h2 class="fs-5">Putri ke-1</h2>
 							<h2 class="fs-5">Bapak Slamet Kerso dan Ibu Yeni Mustika</h2>
 						</div>
 					</div>
@@ -250,59 +250,59 @@
 							<p class="fs-5">Senin, 10 November 2025</p>
 							<p class="fs-5">Pukul 10.00 WIB - Selesai</p>
 							<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NXJuODJoc2ltNzJxZnIxMzhoZDhtNDA1cmsgbmF1ZmFsZmF3d2F6aTBAbQ&tmsrc=naufalfawwazi0%40gmail.com" class="btn btn-outline-success fw-bold"> <i class="fa-solid fa-calendar-check me-2" style="font-size: 1rem"></i> Save The Date</a>
-							<p class="fs-5">Lokasi di Desa Petunjungan, RT 02 RW 06, Kec.Bulakamba, Kab.Brebes, Jawa Tengah</p>
+							<p class="fs-5">Lokasi di Desa Petunjungan, RT 02 RW 06, Kec. Bulakamba, Kab. Brebes, Jawa Tengah</p>
 							<p class="card-text"></p>
 							<a target="_blank" href="https://maps.app.goo.gl/Qv33v6xn5WnWKfRU7" class="btn btn-outline-success fw-bold"> <i class="bi bi-geo-alt-fill" style="font-size: 1rem"></i> google maps</a>
 						</div>
 					</div>
+					<div class="row justify-content-around text-center"></div>
+					<!-- Start Countdown -->
+					<div class="col-md-6 mt-3" id="countdown">
+						<ul id="hitungmundur">
+							<li>
+								<span class="days">00</span>
+								<p class="days_text">Hari</p>
+							</li>
+							<li class="separator">:</li>
+							<li>
+								<span class="hours">00</span>
+								<p class="hours_text">Jam</p>
+							</li>
+							<li class="separator">:</li>
+							<li>
+								<span class="minutes">00</span>
+								<p class="minutes_text">Menit</p>
+							</li>
+							<li class="separator">:</li>
+							<li>
+								<span class="seconds">00</span>
+								<p class="seconds_text">Detik</p>
+							</li>
+						</ul>
+						<div class="spasi"></div>
+						<script class="source" type="text/javascript">
+							var now = new Date();
+							var day = now.getDate();
+							var month = now.getMonth() + 1;
+							var year = now.getFullYear() + 1;
+							var nextyear = month + "/" + day + "/" + year + " 07:07:07";
+							var h = "10/20/2025 08:00:00";
+							$("#hitungmundur").countdown(
+								{
+									date: h, // TODO Date format: 07/27/2017 17:00:00
+									offset: +8, // TODO Timezone Offset
+									day: "Day",
+									days: "Days",
+									// hideOnComplete: true
+								},
+								function (container) {
+									alert("Acara pernikahan kami telah selesai. Terima kasih banyak atas kehadiran Anda!)");
+								}
+							);
+						</script>
+						<!-- End Countdown -->
+					</div>
 				</div>
-				<div class="row justify-content-around text-center"></div>
-				<!-- Start Countdown -->
-				<div class="col-md-6 mt-3" id="countdown">
-					<ul id="hitungmundur">
-						<li>
-							<span class="days">00</span>
-							<p class="days_text">Hari</p>
-						</li>
-						<li class="separator">:</li>
-						<li>
-							<span class="hours">00</span>
-							<p class="hours_text">Jam</p>
-						</li>
-						<li class="separator">:</li>
-						<li>
-							<span class="minutes">00</span>
-							<p class="minutes_text">Menit</p>
-						</li>
-						<li class="separator">:</li>
-						<li>
-							<span class="seconds">00</span>
-							<p class="seconds_text">Detik</p>
-						</li>
-					</ul>
-				</div>
-				<div class="spasi"></div>
-				<script class="source" type="text/javascript">
-					var now = new Date();
-					var day = now.getDate();
-					var month = now.getMonth() + 1;
-					var year = now.getFullYear() + 1;
-					var nextyear = month + "/" + day + "/" + year + " 07:07:07";
-					var h = "10/20/2025 08:00:00";
-					$("#hitungmundur").countdown(
-						{
-							date: h, // TODO Date format: 07/27/2017 17:00:00
-							offset: +8, // TODO Timezone Offset
-							day: "Day",
-							days: "Days",
-							// hideOnComplete: true
-						},
-						function (container) {
-							alert("Acara pernikahan kami telah selesai. Terima kasih banyak atas kehadiran Anda!)");
-						}
-					);
-				</script>
-				<!-- End Countdown -->
 			</section>
 			<!-- Jumbotron end -->
 
@@ -340,7 +340,7 @@
 				<div class="container col-md-6">
 					<div class="row text-center mb-3">
 						<div class="col">
-							<h2>Galeri</h2>
+							<h2 class="font-esthetic fw-bold" style="font-size: 2.7rem">Galeri</h2>
 						</div>
 					</div>
 					<div class="row" style="display: block">
@@ -429,7 +429,7 @@
 				<div class="container col-md-6">
 					<div class="row text-center mb-3 mt-3">
 						<div class="col">
-							<h2>Lokasi Acara</h2>
+							<h2 class="font-esthetic fw-bold" style="font-size: 2.7rem">Lokasi Acara</h2>
 						</div>
 					</div>
 					<div class="row text-center mb-3 mt-3">
@@ -453,7 +453,7 @@
 				<div class="container col-md-6">
 					<div class="row text-center mb-3 mt-3">
 						<div class="col">
-							<h2>Love Gift</h2>
+							<h2 class="font-esthetic fw-bold" style="font-size: 2.7rem">Love Gift</h2>
 							<p>Untuk keluarga dan teman-teman yang ingin memberikan hadiah, silakan klik tombol di bawah ini. Terima kasih :)</p>
 						</div>
 					</div>
@@ -509,7 +509,7 @@
 				<div class="container col-md-6">
 					<div class="row text-center mb-3 mt-3">
 						<div class="col">
-							<h2>Pesan & Doa</h2>
+							<h2 class="font-esthetic fw-bold" style="font-size: 2.7rem">Ucapan & Doa</h2>
 						</div>
 					</div>
 					<form onsubmit="sendMessage()">
@@ -525,13 +525,11 @@
 							</select>
 						</div>
 						<div class="mb-3">
-							<label for="message"><i class="fa-solid fa-comment me-1"></i>Pesan & DOa</label>
-							<textarea id="message" cols="30" rows="3" class="form-control shadow-sm rounded-4" placeholder="Write Message and Prayers" autocomplete="off" required></textarea>
+							<label for="message"><i class="fa-solid fa-comment me-1"></i>Ucapan & Doa</label>
+							<textarea id="message" cols="30" rows="3" class="form-control shadow-sm rounded-4" placeholder="Tulis Ucapan dan Doa" autocomplete="off" required></textarea>
 						</div>
 						<div class="d-grid">
-							<button class="btn btn-primary btn-sm rounded-4 shadow m-1" type="submit">
-								<i class="fa-slod fa-papper-plane me-1">Kirim Pesan</i>
-							</button>
+							<button class="btn btn-primary btn-sm rounded-4 shadow me-1" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Kirim</button>
 						</div>
 					</form>
 				</div>
@@ -549,7 +547,7 @@
 					</div>
 					<div class="row justify-content-center fs-5 text-center">
 						<div class="col-md-6">
-							<h2 style="font-size: 1.5rem">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+							<h2 class="font-esthetic" style="font-size: 2rem">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
 							<h2 class="font-arabic pt-4" style="font-size: 2rem">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h2>
 						</div>
 					</div>
