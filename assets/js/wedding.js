@@ -105,3 +105,12 @@ function sendMessage() {
 	const url = "https://api.whatsapp.com/send?phone=6285225403799&text=Hallo%20Naruto%20%26%20Hinata%0A%20saya%20*" + name + "*%0A%20akan%20*" + presence + "*%20di%20acara%20pernikahan%20kalian%0ADan%20saya%20akan%20menyampaikan%20pesan%2C%20*" + message + "*";
 	window.open(url);
 }
+
+document.getElementById("chatbot-bubble").addEventListener("click", function () {
+	const iframeContainer = document.getElementById("chatbot-iframe-container");
+	if (iframeContainer.style.display === "none" || iframeContainer.style.display === "") {
+		iframeContainer.style.display = "block";
+	} else {
+		iframeContainer.style.display = "none";
+	}
+});

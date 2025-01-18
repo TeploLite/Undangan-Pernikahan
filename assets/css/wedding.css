@@ -642,3 +642,13 @@ svg #main-circ {
 		transform: scale(2);
 	}
 }
+
+#chatbot-bubble:hover {
+	transform: scale(1.1);
+	transition: 0.3s ease;
+}
+#chatbot-iframe-container {
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+}

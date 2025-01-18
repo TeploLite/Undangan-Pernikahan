@@ -638,10 +638,17 @@
 				<br />
 			</footer>
 			<!-- footer end -->
+
+			<div id="chatbot-bubble" style="position: fixed; bottom: 80px; right: 20px; width: 60px; height: 60px; border-radius: 50%; border-radius: 50%; background-color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); cursor: pointer">
+				<img src="assets/images/icon/chat.svg" alt="Chat" style="width: 40px; height: 40px" />
+			</div>
+			<div id="chatbot-iframe-container" style="position: fixed; bottom: 150px; right: 20px; width: 300px; height: 500px; display: none; box-shadow: 0 4px 6px rgb(255, 255, 255)">
+				<iframe src="https://www.chatbase.co/chatbot-iframe/5LeTiw8GIhLHHDWiVBTOj" width="100%" height="100%" style="border: none; border-radius: 8px"></iframe>
+			</div>
+
 			<!--penutupan end-->
 		</main>
 		<!-- content end -->
-
 		<!-- modal start -->
 		<div id="welcomeModal" class="modal1">
 			<div class="hero" style="height: 100vh">
@@ -672,38 +679,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<script>
 			AOS.init();
-		</script>
-		<script>
-			(function () {
-				if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-					window.chatbase = (...arguments) => {
-						if (!window.chatbase.q) {
-							window.chatbase.q = [];
-						}
-						window.chatbase.q.push(arguments);
-					};
-					window.chatbase = new Proxy(window.chatbase, {
-						get(target, prop) {
-							if (prop === "q") {
-								return target.q;
-							}
-							return (...args) => target(prop, ...args);
-						},
-					});
-				}
-				const onLoad = function () {
-					const script = document.createElement("script");
-					script.src = "https://www.chatbase.co/embed.min.js";
-					script.id = "5LeTiw8GIhLHHDWiVBTOj";
-					script.domain = "www.chatbase.co";
-					document.body.appendChild(script);
-				};
-				if (document.readyState === "complete") {
-					onLoad();
-				} else {
-					window.addEventListener("load", onLoad);
-				}
-			})();
 		</script>
 	</body>
 </html>
