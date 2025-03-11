@@ -14,3 +14,23 @@
 Untuk kamu yang ingin melihat demo terlebih dahulu:
 
 https://undangan-nikah-online.netlify.app/
+
+## ⚙️ Tech stack
+
+- Bootstrap 5.3.3
+- AOS 2.3.4
+- Fontawesome 6.5.1
+- Google Fonts
+- Vanilla JS
+
+## 🤝 Contributing
+
+I'm very open to those of you who want to contribute to the undangan pernikahan!
+
+## 🐞 Security Vulnerabilities
+
+If you find any security vulnerabilities in this undangan, please email me via [naufalfawwazi0@gmail.com](mailto:naufalfawwazi0@gmail.com).
+
+## 📜 License
+
+Undangan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
