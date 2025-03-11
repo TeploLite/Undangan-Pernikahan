@@ -33,4 +33,4 @@ If you find any security vulnerabilities in this undangan, please email me via [
 
 ## 📜 License
 
-Undangan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Undangan Pernikahan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
